@@ -64,6 +64,12 @@ footer{
     height: 20px;
     border-radius: 50%;
 }
+.logo2{
+    float: right;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
 .menu-items{
     color: white;
     text-align: center;
