@@ -3,10 +3,14 @@ html, body{
     padding: 0;
     margin: 0;
 }
+.detail {
+    display:inline-block;
+}
 .box {
     background-color: white;
     padding: 25px;
     margin: 30px;
+    display:block;
 }
 .top-header{
     background-color:rgb(57,57,57);
@@ -82,4 +86,19 @@ footer{
 .main{
     max-width: 700px;
     margin: auto;
+}
+.play-pause {
+    color: black;
+    background-color: gray;
+    font-size: 22px;
+    font-family: fc lamoon;
+    text-decoration:none;
+    margin-top: -90px;
+    display:inline-block;
+    transform-origin: center top;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.play-pause:hover{
+    transform: scale(1.1, 1.1);
 }
