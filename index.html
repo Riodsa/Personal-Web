@@ -4,6 +4,7 @@
         <title> Home </title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js"></script>
     </head>
     <body>
         <header class="top-header">
@@ -13,17 +14,32 @@
             <a class="menu-items" href="contact.html" alt="this is my contact"> Contact </a>
             <a href="https://github.com/Riodsa/Personal-Web"><img class="logo2" src="GitHub-Mark.png"></a>
         </header>
-        <div class="box">
-            <h1>Hello World!</h1>
-            <p>I'm Phon Rattanaphichai. You can call me Titan.</p>
-            <p>I'm 15 years old, My Birthday is 9 March 2006.</p>
+        <div class="box" style="width: auto;">
+            <div class="detail">
+                <h1>Hello World!</h1>
+                <p>I'm Phon Rattanaphichai. You can call me Titan.</p>
+                <p>I'm 15 years old, My Birthday is 9 March 2006.</p>
+            </div>
+            <div style="width: auto;">
+                <video id="video1" width="0">
+                    <source src="1.mp4" type="video/mp4">
+                </video>
+                <div style="margin-top: -90px; margin-left: 75rem;">
+                    <button class="play-pause" onclick="playPause()">Play/Pause</button> 
+                </div>
+            </div>
         </div>
         <footer>
             <p>This is Footer.</p>
         </footer>
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+            function playPause() { 
+              if (myVideo.paused) 
+                myVideo.play(); 
+              else 
+                myVideo.pause(); 
+            } 
+        </script>            
     </body>
-
-
-
-
 </html>
